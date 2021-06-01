@@ -1,0 +1,27 @@
+name: Adam Farence
+bio: Data journalist, tech enthusiast, and dog lover
+links:
+  - target: mailto:aefarence@gmail.com
+    text: 📧 email
+  - target: https://adamfarence.com
+    text: 🏠 homepage
+  - target: https://twitter.com/AFarence
+    text: '@AFarence'
+pages:
+  - type: gdoc
+    title: A search for birds and song
+    slug: first-project
+    url: https://docs.google.com/document/d/14uaWLUKlsySSM3rJaUu2eScA1kdHB8SVrXTXosIMi2I/edit?usp=sharing
+  - type: gdoc
+    title: A Day in the Life of an Urban Park Ranger
+    slug: second-project
+    url: https://docs.google.com/document/d/1eNOjJM13l4kW8600ur4B2TQuTRf5QLAzn2WRq-gxmrY/edit?usp=sharing
+  - type: gdoc
+    title: Bitcoin's booming energy demand
+    slug: third-project
+    url: https://docs.google.com/document/d/1MN1DKpaeiLOWmq_hinaJeaM2XjXdf9vL70-s19JnKAI/edit?usp=sharing
+  - type: html
+    title: Fast notes on campaign contributions in Pa.
+    template: html_bootstrap
+    slug: fourth-project
+    filepath: content/output.html

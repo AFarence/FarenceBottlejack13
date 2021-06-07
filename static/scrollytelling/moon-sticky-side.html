@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Lunar Phases</title>
+    <meta name="description" content="Lunar Phases" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #scrolly {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background-color: #f3f3f3;
+        padding: 1rem;
+      }
+
+      #scrolly > * {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+      }
+
+      #scrolly2 {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background-color: #f3f3f3;
+        padding: 1rem;
+      }
+
+      #scrolly2 > * {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+      }
+
+      article {
+        position: relative;
+        padding: 0 1rem;
+        max-width: 20rem;
+      }
+
+      .sticky-thing {
+        position: -webkit-sticky;
+        position: sticky;
+        width: 100%;
+        margin: 0;
+        background-color: #8a8a8a;
+        background-image: url();
+        background-size: cover;
+        background-position: center center;
+        z-index: 0;
+        top: 12.5vh;
+        height: 75vh;
+        /* Center everything inside */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .sticky-thing-2 {
+        position: -webkit-sticky;
+        position: sticky;
+        width: 100%;
+        margin: 0;
+        background-color: #8a8a8a;
+        background-image: url();
+        background-size: cover;
+        background-position: center center;
+        z-index: 0;
+        top: 12.5vh;
+        height: 75vh;
+        /* Center everything inside */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .sticky-thing p {
+        padding: 1rem;
+        font-size: 8rem;
+        font-weight: 900;
+        color: #fff;
+      }
+
+      .step {
+        margin: 0 auto 2rem auto;
+        background-image: url();
+        background-color: #3b3b3b;    
+        color: #fff;
+      }
+
+      .step2 {
+        margin: 0 auto 2rem auto;
+        background-image: url();
+        background-color: #3b3b3b;    
+        color: #fff;
+      }
+
+      .step:last-child {
+        margin-bottom: 10;
+      }
+
+      .step.is-active {
+        background-color: goldenrod;
+        color: #3b3b3b;
+      }
+
+      .step p {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <nav>
+        <a href="https://github.com/russellgoldenberg/scrollama">scrollama.js</a>
+        <div class="nav__examples">
+          <p>Examples:</p>
+          <a href="basic.html">Basic</a>
+          <a href="progress.html">Progress</a>
+          <a href="sticky-side.html">Sticky Side</a>
+          <a href="sticky-overlay.html">Sticky Overlay</a>
+        </div>
+      </nav>
+      <section id="intro">
+        <h1 class="intro__hed">Sticky Side Example</h1>
+        <p class="intro__dek">
+          Start scrolling to see how it works.
+        </p>
+      </section>
+
+      <section id="scrolly">
+        <article>
+          <div class="step" data-step="1" data-img="url(1_mp.jpg)" data-color="green" >
+            <p>New Moon 
+              "New Moon" by NASA Goddard Photo and Video 
+              is licensed under CC BY 2.0<a href=https://search.creativecommons.org/photos/dcede7d9-f01b-415a-8f1b-c32d848f1a0e> click here</a></p>
+          </div>
+          <div class="step" data-step="2" data-img="url(2_mp.jpg)" data-color="blue">
+            <p>Waxing Crescent 
+              "Waxing Crescent Moon (NASA, International Space Station, 02/28/09)" 
+              by NASA's Marshall Space Flight Center is licensed under CC BY-NC 2.0 
+              <a href=https://search.creativecommons.org/photos/c4b9e730-baf7-475b-a430-f821386abf58> click here</a></p>
+          </div>
+          <div class="step" data-step="3" data-img="url(3_mp.jpg)" data-color="yellow">
+            <p>First Quarter
+              "First Quarter Moon this Evening" by Sky Noir is licensed under CC BY-NC 2.0 
+              <a href=https://search.creativecommons.org/photos/07e118d5-bcad-4191-aee8-d42837e1cb59> click here</a>
+            </p>
+          </div>
+          <div class="step" data-step="4" data-img="url(4_mp.jpg)" data-color="red">
+            <p>Waxing Gibbous
+              "moon - waxing gibbous" by atomicshark is licensed under CC BY-NC-SA 2.0 <a href=https://search.creativecommons.org/photos/291b6878-add0-4129-bb4a-d9a18b17bb73> click here</a>
+            </p>
+          </div>
+          <div class="step" data-step="5" data-img="url(5_mp.jpg)">
+            <p>Full Moon
+              "full moon" by darrenprice187 is licensed under CC BY 2.0 <a href=https://search.creativecommons.org/photos/a015e560-a1d7-4111-b301-926fb9e5b09c> click here</a>
+            </p>
+          </div>
+          <div class="step" data-step="6" data-img="url(6_mp.jpg)">
+            <p>Waning Gibbous
+              "Waning Gibbous Moon in Color" by lrargerich is licensed under CC BY-NC 2.0 <a href=https://search.creativecommons.org/photos/4664aba1-5786-4c51-b551-d8257879e951> click here</a>
+            </p>
+          </div>
+          <div class="step" data-step="7" data-img="url(7_mp.jpg)">
+            <p>Third Quarter
+              "Third Quarter Moon - 45% Full" by StephenGA is marked with CC0 1.0 <a href=https://search.creativecommons.org/photos/b6b8be3e-da0e-4b7a-af1b-dc35b24ef08c> click here</a>
+            </p>
+          </div>
+          <div class="step" data-step="8" data-img="url(8_mp.jpg)">
+            <p>Waning Crescent
+              "Waning crescent" by Christian Gloor is licensed with CC BY 2.0. 
+              To view a copy of this license <a href="https://search.creativecommons.org/photos/44f9f8a0-bbfd-4162-8750-0b62f63bb2d9">click here</a>
+            </p>
+          </div>
+        </article>
+
+        <div class="sticky-thing">
+        </div>
+      </section>
+
+      <p>
+        All images licensed by creative commons.
+      </p>
+        <section id="scrolly2">
+          <article>
+            <div class="step2" data-step="1" data-color="red">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="step2" data-step="2" data-color="green">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="step2" data-step="3" data-color="blue">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="step2" data-step="4" data-color="red">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </article>
+          <div class="sticky-thing">
+          </div>
+        </section>
+      <section id="outro"></section>
+    </main>
+
+    <!-- <div class='debug'></div> -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script>
+      // using d3 for convenience
+      var main = document.querySelector("main");
+      var scrolly = main.querySelector("#scrolly");
+      var sticky = scrolly.querySelector(".sticky-thing");
+      var article = scrolly.querySelector("article");
+      var steps = article.querySelectorAll(".step");
+
+      // initialize the scrollama
+      var scroller = scrollama();
+
+      // scrollama event handlers
+      function handleStepEnter(response) {
+        // response = { element, direction, index }
+        var el = response.element;
+
+        // remove is-active from all steps
+        // then add is-active to this step
+        steps.forEach(step => step.classList.remove('is-active'));
+        el.classList.add('is-active');
+
+        //Start here. Figure out why this keeps removing my pictures.
+
+        // steps2.forEach(step2 => step2.classList.remove('is-active'));
+        // el.classList.add('is-active');
+
+        // update graphic based on step
+        //sticky.querySelector("p").innerText = `Step number ${el.dataset.step}`;
+        //sticky.style.backgroundColor = el.dataset.color;
+        sticky.style.backgroundImage = el.dataset.img;
+        sticky.querySelector("p").style.fontSize = `${el.dataset.step}rem`;
+      }
+
+      function init() {
+        scroller
+          .setup({
+            step: "#scrolly article .step",
+            offset: 0.33,
+            debug: true
+          })
+          .onStepEnter(handleStepEnter);
+
+        // setup resize event
+        window.addEventListener("resize", scroller.resize);
+      }
+
+      // kick things off
+      init();
+    </script>
+  </body>
+</html>
